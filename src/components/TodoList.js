@@ -1,22 +1,7 @@
-import React from 'react'
-import TodoItem from 'TodoItem.js'
+import React, { useState } from "react";
 
-const TodoList = ({tasks,onToggle,onDelete}) => {
-  return (
-    <ul className="todo-list">
-        {
-            tasks.map((task) =>(
-                <TodoItem 
-                key={task.id}
-                task={task}
-                onToggle={onToggle}
-                onDelete={onDelete}
-                />
-            ))
-        }
-
-    </ul>
-  );
-};
+const TodoItem = ({ task, onDelete, onEdit, onMove }) => (
+  
+)
 
 export default TodoList;

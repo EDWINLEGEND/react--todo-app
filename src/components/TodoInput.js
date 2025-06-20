@@ -11,7 +11,7 @@ const TodoInput = ({ addTask }) => {
         setInput('');
     }
 
-    return 
+    return (
     <>
         <form onSubmit={handleSubmit} className="todo-input">
             <input
@@ -24,6 +24,7 @@ const TodoInput = ({ addTask }) => {
             <button type="submit">Add</button>
         </form>
     </>;
+    );
 };
 
 export default TodoInput;
